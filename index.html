@@ -9,23 +9,23 @@
     /* 날짜/시간 및 날씨 정보를 담은 박스 스타일 (검은색 배경, 흰색 텍스트) */
     #info-box {
       text-align: center;
-      margin-bottom: 20px;
       padding: 10px;
       background-color: #000; /* 검은색 */
       border-radius: 8px;
       font-size: 1.2em;
       color: #fff; /* 흰색 텍스트 */
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- 흰색 박스(할 일 목록) 위에 표시할 정보 박스 -->
-  <div id="info-box">
-    <p id="date-time"></p>
-    <p id="weather"></p>
-  </div>
-
   <div class="container">
+    <!-- 흰색 박스 내부에 날짜/시간과 날씨 정보를 표시하는 영역 (To-Do 리스트 상단에 위치) -->
+    <div id="info-box">
+      <p id="date-time"></p>
+      <p id="weather"></p>
+    </div>
+
     <h1>To-Do 리스트 작성 ✅</h1>
     <div class="input-container">
       <input type="text" id="todo-input" placeholder="할 일을 입력하세요...">
